@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <ol class="a">
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>
+                <ol class="b">Item four
+                    <li>Item 4.1</li>
+                    <li>Item 4.2</li>
+                    <li>Item 4.3</li>
+                </ol>
+            </li>
+            <li>Item five</li>
+        </ol>
+    </div>
+
+    <div class="box2">
+        <ol class="a1">
+            <li>Oakfield Middle School
+                <ol class="a2">
+                    <li>Tod Hastings
+                        <ol>
+                            <li>Math(#3)</li>
+                            <li>History(#2)</li>
+                            <li>Science(#2)</li>
+                        </ol>
+                    </li>
+                    <li>Bonita Chavez
+                        <ol>
+                            <li>Math(#1)</li>
+                            <li>History(#4)</li>
+                            <li>Science(#3)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Parkview Mid-High
+                <ol class="a2"> 
+                    <li>Jacque Russell
+                        <ol>
+                            <li>Math(#2)</li>
+                            <li>History(#5)</li>
+                            <li>Science(#4)</li>
+                        </ol>
+                    </li>
+                    <li>Dwayne Clancy
+                        <ol>
+                            <li>Math(#4)</li>
+                            <li>History(#7)</li>
+                            <li>Science(#1)</li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>.</p>
+                <p>.</p>
+                <p>.</p>
+            </li>
+            <li>Jackson Heights Middle School
+                <ol class="a2">
+                    <li>Christine Quon
+                        <ol>
+                            <li>Math(#7)</li>
+                            <li>History(#6)</li>
+                            <li>Science(#5)</li>
+                        </ol>
+                    </li>
+                    <li>Rogez Dietz
+                        <ol>
+                            <li>Math(#5)</li>
+                            <li>History(#8)</li>
+                            <li>Science(#7)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <style>
+        .box1 {
+            margin: 20px auto;
+            box-shadow: 0 0 10px 10px #888;
+            width: 130px;
+            
+        }
+        .box1 ol.a {
+            display: inline-block;
+            margin: 4px 0;
+            list-style-type: upper-roman;
+        }
+        .box1 ol.b {
+            list-style-type: lower-roman;
+            padding: 0;
+        }
+
+        ol.b li {
+            margin-left: 25px;
+        }
+
+        .box2 {
+            background-color: #faaa40;
+            margin: 40px auto;
+            width: 250px;
+            box-shadow: 0 0 10px 10px #888;
+        }
+        .box2 .a1 {
+            list-style-type: upper-roman;
+        }
+        .box2 .a2 {
+            list-style-type: upper-latin;
+        }
+
+        .a1 p {
+            margin: 4px 0;
+        }
+    </style>
+</body>
+</html>
